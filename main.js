@@ -4,6 +4,7 @@ const stepTwo = document.getElementById('step2')
 const stepThree = document.getElementById('step3')
 const stepFour = document.getElementById('step4')
 const confirm = document.getElementById('confirm')
+const exquis = document.getElementById('exquis')
 const subject= {
     value:"",
     mail:"",
@@ -58,9 +59,21 @@ function changeStep(step){
         ccm.name = document.getElementById('name_ccm').value
         stepFour.classList.add('disabled')
         confirm.classList.remove('disabled')
-    } 
+    } else if(step == 6){
+        confirm.classList.add('disabled')
+        share.classList.remove('disabled')
+    }
 }
 
+function showCadavre(){
+    const entireString = subject.value + " "+  verb.value + " " + cod.value + " "+ ccm.value
 
+
+  const newText = document.createTextNode(entireString)
+
+exquis.appendChild(newText)
+
+
+}
   
 

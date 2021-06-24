@@ -9,7 +9,7 @@
 </head>
 <body>
     <img class="logo" src="img/logo.svg">
-    <div id="home" class="container_home"  >
+    <div id="home" class=" container_home"  >
 
         <img src="img/title.svg"/>
 
@@ -127,7 +127,7 @@
         <button class="primaryButton" onclick="changeStep(5)" > Envoyer</button>
     </div>
 
-    <div class="disabled container_step " id="confirm" >
+    <div class=" disabled container_step " id="confirm" >
         <div class='stars'>
             <img src="img/star_empty.svg"/>
             <img src="img/star_empty.svg"/>
@@ -135,14 +135,16 @@
             <img src="img/star_full.svg"/>
         </div>
 
-        <div>
-            <div> Merci pour Participation !</div>
+        <div class="col_confirm" >
+            <h2> Merci pour Participation !</h2>
 
             <div>Tu recevras ton cadavre exquis complet par mail ! Nos libraires ont glissé une surprise dans ce dernier.</div>
 
+            <div style="text-align: center;" >
             <div>PS : Tu peux aussi jouer avec tes amis, clique ci dessous pour qu’ils puissent participer avec toi sur ce cadavre :</div>
 
-            <button class="primaryButton">Donner la suite a un ami</button>
+            <button style="margin-top:25px;" class="primaryButton" onclick="changeStep(6)" >Donner la suite a un ami</button>
+            </div>
 
 
         </div>
@@ -150,6 +152,31 @@
 
         
     </div>
+
+    <div class="share container_step " id="share" >
+     
+
+            <h2> Partage ce cadavre exquis !</h2>
+
+            <div class="row_social" >
+                <img src="img/fb.svg">
+                <img src="img/twiter.svg">
+                <img src="img/insta.svg">
+            </div>
+
+            <h2>Ou copie ce lien</h2>
+
+                <div class="link" >
+                    <div style="text-decoration: underline;" > https://www.noelexquischezmollat.com/7gh54gh </div>
+
+                    <div>Copy</div>
+                    
+                </div>
+                <button onclick="showCadavre()" class="primaryButton" > Montrer le cadavre exquis</button>
+                <div id="exquis"></div>
+            </div>
+
+        
 
     <footer>
         <div>
