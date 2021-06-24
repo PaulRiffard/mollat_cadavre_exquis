@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cadavre Exquis</title>
+</head>
+<body>
+    <img class="logo" src="img/logo.svg">
+    <div id="home" class="container_home"  >
+
+        <img src="img/title.svg"/>
+
+        <div>
+            <button class="primaryButton" onclick="changeStep(1)" > Commencer un cadavre </button>
+
+            <button class="secondaryButton" onclick="changeStep(1)">Completer un cadavre </button>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="disabled container_step " id="step1">
+        <div class='stars'>
+            <img src="img/star_full.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+        </div>
+
+        <h2> Choisissez un sujet pour le cadavre exquis.  </h2>
+
+        <input id="subject"  type="text" placeholder="La reine des neiges" onchange="getSubject()" >
+
+        <div class="row_coordonee" >
+            <div class="coordonee" >
+                <label>Signez votre oeuvre</label>
+                <input id="name_subject" type="text" placeholder="Jean-Marc">
+            </div>
+            <div class="coordonee" >
+                <label>Votre adresse-mail</label>
+                <input id="mail_subject" type="mail" placeholder="Jean-Marc@gmail.com">
+            </div>
+
+        </div>
+
+        <button class="primaryButton" onclick="changeStep(2)" > Envoyer</button>
+    
+    </div>
+    <div class="disabled container_step " id="step2" >
+        <div class='stars'>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_full.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+        </div>
+        <h2> Choisissez un verbe pour le cadavre exquis.  </h2>
+        <input id="verb"  type="text" placeholder="Mange" >
+
+        <div class="row_coordonee" >
+            <div class="coordonee" >
+                <label>Signez votre oeuvre</label>
+                <input id="name_verb" type="text" placeholder="Jean-Marc">
+            </div>
+            <div class="coordonee" >
+                <label>Votre adresse-mail</label>
+                <input id="mail_verb" type="mail" placeholder="Jean-Marc@gmail.com">
+            </div>
+
+        </div>
+
+        <button class="primaryButton" onclick="changeStep(3)" > Envoyer</button>
+    
+    </div>
+    <div class="disabled container_step " id="step3" >
+        <div class='stars'>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_full.svg"/>
+            <img src="img/star_empty.svg"/>
+        </div>
+        <h2> Choisissez un complément d'objet direct pour le cadavre exquis.  </h2>
+        <input id="cod"  type="text" placeholder=" Un Xylophone" >
+
+        <div class="row_coordonee" >
+            <div class="coordonee" >
+                <label>Signez votre oeuvre</label>
+                <input id="name_cod" type="text" placeholder="Jean-Marc">
+            </div>
+            <div class="coordonee" >
+                <label>Votre adresse-mail</label>
+                <input id="mail_cod" type="mail" placeholder="Jean-Marc@gmail.com">
+            </div>
+
+        </div>
+
+        <button class="primaryButton" onclick="changeStep(4)" > Envoyer</button>
+    
+    </div>
+
+    <div class="disabled container_step " id="step4" >
+        <div class='stars'>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_full.svg"/>
+        </div>
+        <h2> Choisissez un complément circonstentiel de maniere pour le cadavre exquis.  </h2>
+        <input id="ccm"  type="text" placeholder=" En hochant la tête" >
+
+        <div class="row_coordonee" >
+            <div class="coordonee" >
+                <label>Signez votre oeuvre</label>
+                <input id="name_ccm" type="text" placeholder="Jean-Marc">
+            </div>
+            <div class="coordonee" >
+                <label>Votre adresse-mail</label>
+                <input id="mail_ccm" type="mail" placeholder="Jean-Marc@gmail.com">
+            </div>
+
+        </div>
+
+        <button class="primaryButton" onclick="changeStep(5)" > Envoyer</button>
+    </div>
+
+    <div class="disabled container_step " id="confirm" >
+        <div class='stars'>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_empty.svg"/>
+            <img src="img/star_full.svg"/>
+        </div>
+
+        <div>
+            <div> Merci pour Participation !</div>
+
+            <div>Tu recevras ton cadavre exquis complet par mail ! Nos libraires ont glissé une surprise dans ce dernier.</div>
+
+            <div>PS : Tu peux aussi jouer avec tes amis, clique ci dessous pour qu’ils puissent participer avec toi sur ce cadavre :</div>
+
+            <button class="primaryButton">Donner la suite a un ami</button>
+
+
+        </div>
+       
+
+        
+    </div>
+
+    <footer>
+        <div>
+            © 2021 Mollat
+
+        </div>
+        <div>
+            crédits
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>   
+</body>
+</html>
